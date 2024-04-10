@@ -11,7 +11,7 @@ class UsersController extends Controller
     public function show() 
     {
         SqlCommenter::enable();
-        SqlCommenter::addComment('verified_by', 'henry');
+        app(SqlCommenter::class)->addComment('verified_by', 'henry');
         DB::enableQueryLog();
         User::where('name', 'Taiwan number one')->first();
         SqlCommenter::disable();
