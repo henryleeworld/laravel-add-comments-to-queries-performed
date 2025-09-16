@@ -8,12 +8,15 @@ use Spatie\SqlCommenter\SqlCommenter;
 
 class UsersController extends Controller 
 {
+    /**
+     * Display the specified resource.
+     */
     public function show() 
     {
         SqlCommenter::enable();
-        app(SqlCommenter::class)->addComment('verified_by', 'henry');
+        app(SqlCommenter::class)->addComment('verified_by', 'Henry');
         DB::enableQueryLog();
-        User::where('name', 'Taiwan number one')->first();
+        User::where('name', __('Taiwan number one'))->first();
         SqlCommenter::disable();
         dd(DB::getQueryLog());
     }

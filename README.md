@@ -1,4 +1,4 @@
-# Laravel 11 為執行資料庫查詢加入註解
+# Laravel 12 為執行資料庫查詢加入註解
 
 引入 spatie 的 laravel-sql-commenter 套件來擴增為執行資料庫查詢加入註解，以便指出使用者提供的文字，伺服器不會評估註解。
 
@@ -26,5 +26,5 @@ $ php artisan migrate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/tr6MUhP.png)
+![](https://i.imgur.com/Mj3vV6i.png)
 > 伺服器不會評估 `/*` 和 `*/` 之間的文字
